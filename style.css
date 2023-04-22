@@ -173,4 +173,60 @@ input {
     background-color: rgb(202, 202, 202);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+}
+
+.main-headers {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-section {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.announcements-section {
+    grid-column: 2;
+    grid-row: 1
+}
+
+.trending-section {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.trending-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.trending-text-container {
+    place-content: start;
+}
+
+.trending-text-1,
+.trending-text-2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.trending-text-2 {
+    color: rgb(99, 99, 99);
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: auto minmax(100px, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.trending-icons {
+    grid-column: 1;
 }
